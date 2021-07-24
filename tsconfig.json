@@ -20,5 +20,5 @@
       "@ultimate-monorepo/models": ["packages/models/index.ts"]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "dist", "out"]
 }
