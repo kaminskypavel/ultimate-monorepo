@@ -6,8 +6,8 @@
     "dev": "vite",
     "start": "vite",
     "test": "jest",
-    "build": "tsc && vite build",
-    "serve": "vite preview"
+    "build": "tsc && cross-env NODE_ENV=production vite build",
+    "serve": "yarn build && vite preview"
   },
   "dependencies": {
     "react": "^17.0.0",
