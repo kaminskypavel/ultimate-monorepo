@@ -7,10 +7,10 @@
 - lerna
 - yarn Workspaces
 
-
 ### Typescript
 
 #### [tsconfig-paths](https://github.com/dividab/tsconfig-paths#readme)
+
 makes the magic happen with module reloading.
 without it you'll get
 
@@ -23,4 +23,4 @@ also the `tsnd` reload wont work
 - [NiGhTTraX/ts-monorepo](https://github.com/NiGhTTraX/ts-monorepo)
 
 - [SatadruBhattacharjee/monorepo-fullstack-typescript-react-express-jest-cypress
-](https://github.com/SatadruBhattacharjee/monorepo-fullstack-typescript-react-express-jest-cypress)
+  ](https://github.com/SatadruBhattacharjee/monorepo-fullstack-typescript-react-express-jest-cypress)

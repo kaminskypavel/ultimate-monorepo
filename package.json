@@ -9,7 +9,8 @@
   "author": "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint . --fix"
+    "lint": "eslint --cache --fix . && prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "typescript": "^4.3.5"
@@ -19,7 +20,7 @@
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
     "eslint": "^7.31.0",
-    "husky": "^7.0.1",
+    "husky": "^7.0.0",
     "jest": "^27.0.6",
     "lint-staged": "^11.1.0",
     "prettier": "^2.3.2",
