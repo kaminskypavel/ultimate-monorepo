@@ -12,7 +12,9 @@
     "lint": "eslint --cache --fix . && prettier --write .",
     "clean": "lerna run clean --stream",
     "build": "lerna run build --stream",
-    "start:api": "lerna run start --stream --scope @ultimate-monorepo/api",
+    "dev": "lerna run start --stream --scope=@ultimate-monorepo/{api,frontend}",
+    "dev:api": "lerna run start --stream --scope @ultimate-monorepo/api",
+    "dev:frontend": "lerna run start --stream --scope @ultimate-monorepo/frontend",
     "test": "lerna run test --stream",
     "postinstall": "husky install"
   },
