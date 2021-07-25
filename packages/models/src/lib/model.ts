@@ -4,6 +4,6 @@ export type User = {
 };
 
 export const johnDoe: User = {
-  name: 'John Doe',
+  name: 'John Doe1',
   age: 30,
 };

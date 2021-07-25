@@ -1,7 +1,7 @@
 import * as express from 'express';
 import { johnDoe, User } from '@ultimate-monorepo/models';
 const app = express();
-const port = 3000; // default port to listen
+const port = 3001; // default port to listen
 
 const user: User = johnDoe;
 
