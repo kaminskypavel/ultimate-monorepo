@@ -1,13 +1,13 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "rootDir": ".",
+    "baseUrl": ".",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports":true,
+    "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "target": "es2015",
     "module": "commonjs",
@@ -15,10 +15,9 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": ".",
     "paths": {
-      "@ultimate-monorepo/api": ["packages/api/index.ts"],
-      "@ultimate-monorepo/models": ["packages/models/index.ts"]
+      "@ultimate-monorepo/api": ["./packages/api/src"],
+      "@ultimate-monorepo/models": ["./packages/models/src"]
     }
   },
   "exclude": ["node_modules", "dist", "out"]
