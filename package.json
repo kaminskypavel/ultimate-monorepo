@@ -9,7 +9,7 @@
   "author": "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint . --fix"
   },
   "dependencies": {
     "typescript": "^4.3.5"
