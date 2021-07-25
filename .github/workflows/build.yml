@@ -4,8 +4,8 @@ on:
     branches:
       - master
     paths:
-      - "packages/**/*"
-      - ".github/workflows/*.yml"
+      - 'packages/**/*'
+      - '.github/workflows/*.yml'
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: "14.15.4"
+          node-version: '14.15.4'
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path

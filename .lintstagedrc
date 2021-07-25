@@ -1,8 +1,8 @@
 {
-  "packages/**/src/**/*.+(js|json|ts|tsx)": [
+  "packages/**/*.+(js|json|ts|tsx)": [
     "eslint --cache --fix"
   ],
-  "packages/**/src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+  "packages/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
     "prettier --write"
   ]
 }
