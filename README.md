@@ -9,6 +9,7 @@
 - jest
 - lerna
 - yarn Workspaces
+- Vite (react)
 
 ### Typescript
 
