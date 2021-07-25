@@ -1,12 +1,13 @@
 import * as express from 'express';
-import * as models from '@ultimate-monorepo/models';
+import { johnDoe, User } from '@ultimate-monorepo/models';
 const app = express();
 const port = 3000; // default port to listen
 
-console.log(models);
+const user: User = johnDoe;
+
 // define a route handler for the default home page
 app.get('/', (req, res) => {
-  res.send('Hello world!!');
+  res.json(user);
 });
 
 // start the Express server

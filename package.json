@@ -10,8 +10,10 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint --cache --fix . && prettier --write .",
-    "build": "echo 'build'",
-    "test": "echo 'test'",
+    "clean": "lerna run clean --stream",
+    "build": "lerna run build --stream",
+    "start:api": "lerna run start --stream --scope @ultimate-monorepo/api",
+    "test": "lerna run test --stream",
     "postinstall": "husky install"
   },
   "dependencies": {
@@ -25,6 +27,7 @@
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.0",
     "jest": "^27.0.6",
+    "lerna": "^4.0.0",
     "lint-staged": "^11.1.0",
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
