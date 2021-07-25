@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "jsx": "react",
     "baseUrl": ".",
     "sourceMap": true,
     "declaration": false,
@@ -18,7 +19,8 @@
     "skipDefaultLibCheck": true,
     "paths": {
       "@ultimate-monorepo/api": ["./packages/api/src"],
-      "@ultimate-monorepo/models": ["./packages/models/src"]
+      "@ultimate-monorepo/models": ["./packages/models/src"],
+      "@ultimate-monorepo/componets": ["./packages/components/src"]
     }
   },
   "exclude": ["node_modules", "dist", "out"]

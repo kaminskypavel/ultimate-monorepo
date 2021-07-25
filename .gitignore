@@ -40,3 +40,4 @@ Thumbs.db
 dist
 .eslintcache
 *.log
+**/*/node_modules

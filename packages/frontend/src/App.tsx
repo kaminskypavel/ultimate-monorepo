@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import * as models from '@ultimate-monorepo/models';
+import {Button} from '@ultimate-monorepo/componets';
 
 const App = () => {
   const [count, setCount] = useState(0);
-
   return (
     <div className="App">
       <header className="App-header">
@@ -13,6 +13,7 @@ const App = () => {
         <h2>user : {JSON.stringify(models)}</h2>
         <p>Hello Vite + React!</p>
         <p>
+          <Button label="imported button" />
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
           </button>
