@@ -10,6 +10,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint --cache --fix . && prettier --write .",
+    "build": "echo 'build'",
+    "test": "echo 'test'",
     "postinstall": "husky install"
   },
   "dependencies": {
