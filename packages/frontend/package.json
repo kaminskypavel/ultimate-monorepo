@@ -5,6 +5,7 @@
     "clean": "rm -rf dist",
     "dev": "vite",
     "start": "vite",
+    "test": "jest",
     "build": "tsc && vite build",
     "serve": "vite preview"
   },

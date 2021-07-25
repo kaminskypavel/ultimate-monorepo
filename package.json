@@ -16,13 +16,14 @@
     "dev:api": "lerna run start --stream --scope @ultimate-monorepo/api",
     "dev:frontend": "lerna run start --stream --scope @ultimate-monorepo/frontend",
     "bootstrap": "lerna bootstrap",
-    "test": "lerna run test --stream",
+    "test": "lerna run test --stream -- --passWithNoTests",
     "postinstall": "husky install"
   },
   "dependencies": {
     "typescript": "^4.3.5"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.24",
     "@types/node": "^16.4.1",
     "@types/react": "^17.0.15",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
