@@ -1,8 +1,10 @@
 {
   "packages/**/src/**/*.+(js|json|ts|tsx)": [
-    "eslint --cache --fix"
+    "eslint --cache --fix",
+    "git add"
   ],
   "packages/**/src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-    "prettier --write"
+    "prettier --write",
+    "git add"
   ]
 }
