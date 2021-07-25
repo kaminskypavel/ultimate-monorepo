@@ -1,4 +1,4 @@
 import Button from './Button';
-import './index.css';
+import ChitChat from './ChitChat';
 
-export {Button};
+export {Button, ChitChat};

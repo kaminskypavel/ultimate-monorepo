@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import * as models from '@ultimate-monorepo/models';
-import {Button} from '@ultimate-monorepo/componets';
+import {Button, ChitChat} from '@ultimate-monorepo/componets';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -11,6 +11,7 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2>user : {JSON.stringify(models)}</h2>
+        <ChitChat />
         <p>Hello Vite + React!</p>
         <p>
           <Button label="imported button" />
