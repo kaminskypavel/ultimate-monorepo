@@ -2,7 +2,7 @@ name: build
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - "packages/**/*"
       - ".github/workflows/*.yml"
@@ -40,5 +40,5 @@ jobs:
         run: yarn lint
 
       - name: Build (...🔨)
-        run: yarn build
+        run: yarn aws-build
 
