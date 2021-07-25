@@ -1,5 +1,5 @@
 {
-  "name": "vite-monorepo",
+  "name": "ultimate-monorepo",
   "version": "1.0.0",
   "private": true,
   "workspaces": [
@@ -15,6 +15,7 @@
     "dev": "lerna run start --stream --scope=@ultimate-monorepo/{api,frontend}",
     "dev:api": "lerna run start --stream --scope @ultimate-monorepo/api",
     "dev:frontend": "lerna run start --stream --scope @ultimate-monorepo/frontend",
+    "bootstrap" : "lerna bootstrap",
     "test": "lerna run test --stream",
     "postinstall": "husky install"
   },
@@ -23,8 +24,10 @@
   },
   "devDependencies": {
     "@types/node": "^16.4.1",
+    "@types/react": "^17.0.15",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
+    "cypress": "^8.0.0",
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.0",

@@ -39,3 +39,4 @@ testem.log
 Thumbs.db
 dist
 .eslintcache
+*.log
