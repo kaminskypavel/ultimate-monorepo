@@ -10,6 +10,7 @@
 - yarn Workspaces
 - Vite (react)
 - storybook
+- TailwindCss
 
 
 ## Modules
