@@ -9,9 +9,23 @@
 - lerna
 - yarn Workspaces
 - Vite (react)
+- storybook
+
+
+## Modules
+
+### models
+a shared files for all the packages, that's a natural place to place your typescript definition and interfaces
+
+###  api
+an express based backend module
+###  components
+a storybook based react library made to be shared across multiple packages
+### frontend
+a ViteJS based frontend with react
+
 
 ### Typescript
-
 #### [tsconfig-paths](https://github.com/dividab/tsconfig-paths#readme)
 
 makes the magic happen with module reloading.
