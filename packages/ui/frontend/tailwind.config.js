@@ -1,7 +1,9 @@
 module.exports = {
-  // ! todo : explore why everything is being purged
-  // purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  purge: false,
+  purge: [
+    './index.html',
+    './src/**/*.{vue,js,ts,jsx,tsx}',
+    './../components/src/**/*.{vue,js,ts,jsx,tsx}',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
