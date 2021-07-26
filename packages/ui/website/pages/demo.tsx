@@ -1,61 +1,159 @@
-import {ChitChat} from '@ultimate-monorepo/componets';
-/* eslint-disable @next/next/no-img-element */
+import React from 'react';
 
 const Demo = () => {
   return (
-    <div>
-      <ChitChat />
-      <div className="bg-gray-200 rounded py-16 px-12 m-16 flex flex-col items-center justify-center max-w-sm md:max-w-lg  mx-auto">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-20 w-20 text-purple-700"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>{' '}
-        <form method="post" className="mt-8 mb-4">
-          <div className="mb-4">
-            <label htmlFor="userEmail" className="sr-only">
-              Email address
-            </label>
-            <input
-              className="border-solid border border-gray-400 rounded px-2 py-3"
-              type="email"
-              id="userEmail"
-              placeholder="Email address"
-              required
-            />
+    <div className="flex flex-col items-center justify-center w-screen h-screen px-10 py-20 text-gray-700 bg-gray-100">
+      <div className="flex flex-col items-center w-full max-w-screen-md p-6 pb-6 mt-10 bg-white rounded-lg shadow-xl sm:p-8">
+        <h2 className="text-xl font-bold">Monthly Revenue</h2>
+        <span className="text-sm font-semibold text-gray-500">2020</span>
+        <div className="flex items-end flex-grow w-full mt-2 space-x-2 sm:space-x-3">
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $37,500
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-8 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-6 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow h-16 bg-indigo-400"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">Jan</span>
           </div>
-          <div>
-            <label htmlFor="userEmail" className="sr-only">
-              Password
-            </label>
-            <input
-              className="border-solid border border-gray-400 rounded px-2 py-3"
-              type="password"
-              id="userPass"
-              placeholder="Password"
-              required
-            />
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $45,000
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-6 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow h-20 bg-indigo-400"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">Feb</span>
           </div>
-          <div className="my-4 flex items-center">
-            <input className="h-4 w-4 mr-2" type="checkbox" id="userRemember" />
-            <label htmlFor="userRemember">Remember me</label>
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $47,500
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-8 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow h-20 bg-indigo-400"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">Mar</span>
           </div>
-          <button
-            className="bg-gray-500 hover:bg-gray-600 text-white font-bold w-full py-3"
-            type="submit"
-          >
-            Sign in
-          </button>
-        </form>
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $50,000
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-6 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow h-24 bg-indigo-400"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">Apr</span>
+          </div>
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $47,500
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-10 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-8 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow h-20 bg-indigo-400"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">May</span>
+          </div>
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $55,000
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-8 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow h-24 bg-indigo-400"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">Jun</span>
+          </div>
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $60,000
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-16 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow h-20 bg-indigo-400"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">Jul</span>
+          </div>
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $57,500
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-10 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow h-24 bg-indigo-400"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">Aug</span>
+          </div>
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $67,500
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-10 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow h-32 bg-indigo-400"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">Sep</span>
+          </div>
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $65,000
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-12 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow bg-indigo-400 h-28"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">Oct</span>
+          </div>
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $70,000
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-8 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-8 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow h-40 bg-indigo-400"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">Nov</span>
+          </div>
+          <div className="relative flex flex-col items-center flex-grow pb-5 group">
+            <span className="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">
+              $75,000
+            </span>
+            <div className="flex items-end w-full">
+              <div className="relative flex justify-center flex-grow h-12 bg-indigo-200"></div>
+              <div className="relative flex justify-center flex-grow h-8 bg-indigo-300"></div>
+              <div className="relative flex justify-center flex-grow h-40 bg-indigo-400"></div>
+            </div>
+            <span className="absolute bottom-0 text-xs font-bold">Dec</span>
+          </div>
+        </div>
+        <div className="flex w-full mt-3">
+          <div className="flex items-center ml-auto">
+            <span className="block w-4 h-4 bg-indigo-400"></span>
+            <span className="ml-1 text-xs font-medium">Existing</span>
+          </div>
+          <div className="flex items-center ml-4">
+            <span className="block w-4  h-4 bg-indigo-300"></span>
+            <span className="ml-1 text-xs font-medium">Upgrades</span>
+          </div>
+          <div className="flex items-center ml-4">
+            <span className="block w-4  h-4 bg-indigo-200"></span>
+            <span className="ml-1 text-xs font-medium">New</span>
+          </div>
+        </div>
       </div>
     </div>
   );
