@@ -18,12 +18,14 @@
 ### models
 a shared files for all the packages, that's a natural place to place your typescript definition and interfaces
 
-###  api
+###  backend\api
 an express based backend module
-###  components
+###  ui\components
 a storybook based react library made to be shared across multiple packages
-### frontend
+### ui\frontend
 a ViteJS based frontend with react
+### ui\website
+a NextJS based app
 
 
 ### Typescript

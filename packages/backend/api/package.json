@@ -10,7 +10,8 @@
     "start": "ts-node-dev --rs -r tsconfig-paths/register ./src/index.ts"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "@ultimate-monorepo/models": "*"
   },
   "devDependencies": {
     "@types/express": "^4.17.13"

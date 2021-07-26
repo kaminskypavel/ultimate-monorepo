@@ -18,9 +18,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "paths": {
-      "@ultimate-monorepo/api": ["./packages/api/src"],
+      "@ultimate-monorepo/api": ["./packages/backend/api/src"],
       "@ultimate-monorepo/models": ["./packages/models/src"],
-      "@ultimate-monorepo/componets": ["./packages/components/src"]
+      "@ultimate-monorepo/componets": ["./packages/ui/components/src"]
     }
   },
   "exclude": ["node_modules", "dist", "out"]
