@@ -2,7 +2,7 @@ import * as React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import {Button} from '../../components/src/';
+import {Button, ChitChat} from '../../components/src/';
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <Button label="hello world" />
+        <ChitChat />
 
         <p className={styles.description}>
           Get started by editing <code className={styles.code}>pages/index.js</code>
