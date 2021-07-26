@@ -22,9 +22,9 @@ a shared files for all the packages, that's a natural place to place your typesc
 an express based backend module
 ###  ui\components
 a storybook based react library made to be shared across multiple packages
-### ui\frontend
+### [ui\frontend](https://ultimate-monorepo-frontend.vercel.app/)
 a ViteJS based frontend with react
-### ui\website
+### [ui\website](https://ultimate-monorepo-website.vercel.app/)
 a NextJS based app
 
 
@@ -35,9 +35,13 @@ makes the magic happen with module reloading.
 without it you'll get
 
 `[ERROR] 17:28:01 Error: Cannot find module 'D:\devl\vite-monorepo\node_modules\@ultimate-monorepo\models\dist\index.js'. Please verify that the package.json has a valid "main" entry` error.
-
 also the `tsnd` reload wont work
 
+
+### Deployment
+
+the monorepo is hosted on [vercel](https://vercel.com/kaminskypavel/ultimate-monorepo-frontend/settings)
+with the "Ignored Build Step" `git diff HEAD^ HEAD --quiet . ./../components`
 ### References
 
 - [NiGhTTraX/ts-monorepo](https://github.com/NiGhTTraX/ts-monorepo)
