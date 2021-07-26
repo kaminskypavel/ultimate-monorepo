@@ -19,7 +19,7 @@
     "skipDefaultLibCheck": true,
     "paths": {
       "@ultimate-monorepo/api": ["./packages/backend/api/src"],
-      "@ultimate-monorepo/models": ["./packages/models/src"],
+      "@ultimate-monorepo/models": ["./packages/backend/models/src"],
       "@ultimate-monorepo/componets": ["./packages/ui/components/src"]
     }
   },

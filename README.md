@@ -15,7 +15,7 @@
 
 ## Modules
 
-### models
+### backend\models
 a shared files for all the packages, that's a natural place to place your typescript definition and interfaces
 
 ###  backend\api
