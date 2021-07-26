@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/**/*"
   ],
   "repository": "git@github.com:kaminskypavel/vite-monorepo.git",
   "author": "Pavel 'PK' Kaminsky <kaminsky.pavel@gmail.com>",
@@ -17,6 +17,7 @@
     "dev:frontend": "lerna run start --stream --scope @ultimate-monorepo/frontend",
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test --stream -- --passWithNoTests",
+    "kill-node": "cmd \"/C TASKKILL /IM node.exe /F\"",
     "postinstall": "husky install"
   },
   "dependencies": {
